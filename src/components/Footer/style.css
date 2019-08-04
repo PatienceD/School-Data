@@ -1,0 +1,11 @@
+.footer {
+    padding: 10px;
+    display: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.wrapper {
+    min-height: calc(100vh - 233px);
+}
