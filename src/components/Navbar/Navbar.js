@@ -4,8 +4,8 @@ import Logo from "./logo/mwlogo.png"
 
 function Navbar() {
     return (
-        <nav className="mb-1 navbar navbar-expand-lg danger-color-dark lighten-1" style={{ color: "#fafafa" }}>
-            <h5 className="navbar-brand" style={{ fontSize: "33px" }}>Education Analytics Assessment</h5>
+        <nav className="mb-1 navbar navbar-expand-lg danger-color-dark lighten-1" style={{ color: "#fafafa", height: "95px" }}>
+            <h5 className="navbar-brand" style={{ fontSize: "30px" }}>Education Analytics Assessment</h5>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
                 aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@ function Navbar() {
                     </li>
                 </ul>
                 <img src={Logo}
-                    alt="avatar image" height="130"></img>
+                    alt="avatar image" height="115"></img>
             </div>
         </nav>
     )
