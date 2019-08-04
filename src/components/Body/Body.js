@@ -6,7 +6,7 @@ function Body() {
     return (
         <div className="container">
             <div className="row">
-                <div class="jumbotron">
+                <div class="jumbotron" style={{marginTop: "25px"}}>
                     <h2 class="display-4">University of Wisconsin-Madison</h2>
                     <p class="lead">Location: Madison, Wisconsin 53706</p>
                     <p>Current Alias:</p>
@@ -15,7 +15,7 @@ function Body() {
                     <p>"The primary purpose of the University of Wisconsin–Madison is to provide a learning environment in which faculty,
                         staff and students can discover, examine critically, preserve and transmit the knowledge, wisdom and values that
                         will help ensure the survival of this and future generations and improve the quality of life for all."</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Check out their website</a>
+                    <a class="btn btn-lg" href="#" role="button" style={{backgroundColor: "#DAA520"}}>Check out their website</a>
                 </div>
             </div>
             <div className="row">
@@ -51,17 +51,17 @@ function Body() {
                         <div className="card-body">
                             <div className="row">
                                 <div className="col-md-12">
-                                    <button type="button" class="btn btn-info">Save Page as a PDF</button>
+                                    <button type="button" class="btn" style={{backgroundColor: "#DAA520"}}>Save Page as a PDF</button>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-md-12">
-                                    <button type="button" class="btn btn-info">Download</button>
+                                    <button type="button" class="btn" style={{backgroundColor: "#DAA520"}}>Download</button>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-md-12">
-                                    <button type="button" class="btn btn-info">Print</button>
+                                    <button type="button" class="btn" style={{backgroundColor: "#DAA520"}}>Print</button>
                                 </div>
                             </div>
 
