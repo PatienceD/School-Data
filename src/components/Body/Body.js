@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import { Doughnut } from 'react-chartjs-2';
-import {HorizontalBar} from 'react-chartjs-2';
+import { HorizontalBar } from 'react-chartjs-2';
 var axios = require("axios");
 let apiURL =
     "https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&2015.academics.program_available.assoc_or_bachelors=true&2015.student.size__range=1..&school.degrees_awarded.predominant__range=1..3&school.degrees_awarded.highest__range=2..4&id=240444&api_key=mkIYGU6R65A5fNgNLr2uaaywY4pEEuhDGkyt0oDG";
-
-
 
 class School extends Component {
     constructor(props) {
@@ -45,16 +43,12 @@ class School extends Component {
                     MidMath: response.data.results[0].latest.admissions.sat_scores.midpoint.math,
                     MidWriting: response.data.results[0].latest.admissions.sat_scores.midpoint.writing,
                     MidReading: response.data.results[0].latest.admissions.sat_scores.midpoint.critical_reading,
-
-
                 })
-                console.log(response.data.results[0].latest.student.demographics.race_ethnicity.black)
             })
             .catch(error => {
                 console.log("Error on request");
             });
     }
-
 
 
     render() {
@@ -119,18 +113,17 @@ class School extends Component {
         const HorData = {
             labels: ['Average', 'Mid Point for Math', 'Mid Point for Writing', 'Mid Point for Reading'],
             datasets: [
-              {
-                label: 'Scores',
-                backgroundColor: 'rgba(255,99,132,0.2)',
-                borderColor: 'rgba(255,99,132,1)',
-                borderWidth: 1,
-                hoverBackgroundColor: 'rgba(255,99,132,0.4)',
-                hoverBorderColor: 'rgba(255,99,132,1)',
-                data: [this.state.Average,this.state.MidMath, this.state.MidWriting, this.state.MidReading]
-              }
+                {
+                    label: 'Scores',
+                    backgroundColor: 'rgba(255,99,132,0.2)',
+                    borderColor: 'rgba(255,99,132,1)',
+                    borderWidth: 1,
+                    hoverBackgroundColor: 'rgba(255,99,132,0.4)',
+                    hoverBorderColor: 'rgba(255,99,132,1)',
+                    data: [this.state.Average, this.state.MidMath, this.state.MidWriting, this.state.MidReading]
+                }
             ]
-          };
-
+        };
 
         const { error } = this.state;
         if (error) {
@@ -205,33 +198,5 @@ class School extends Component {
         }
     }
 }
-
-
-const PolarData = {
-    datasets: [{
-        data: [
-            11,
-            16,
-            7,
-            3,
-            14
-        ],
-        backgroundColor: [
-            '#FF6384',
-            '#4BC0C0',
-            '#FFCE56',
-            '#E7E9ED',
-            '#36A2EB'
-        ],
-        label: 'My dataset' // for legend
-    }],
-    labels: [
-        'Red',
-        'Green',
-        'Yellow',
-        'Grey',
-        'Blue'
-    ]
-};
 
 export default School;

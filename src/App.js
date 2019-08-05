@@ -6,6 +6,8 @@ import React from 'react';
 import Navbar from "./components/Navbar";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
+import Schools from "./components/Schools";
+import NoSchools from "./components/NoSchools";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Body} />
+            <Route exact path="/schools" component={Schools} />
+            <Route component={NoSchools} />
           </Switch>
         </Router>
       </div>

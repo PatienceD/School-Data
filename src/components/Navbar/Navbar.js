@@ -19,7 +19,7 @@ function Navbar() {
 
                         <div className="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
                             <a className="dropdown-item" href="/">University of Wisconsin-Madison</a>
-                            <a className="dropdown-item" href="#">Up and coming schools!</a>
+                            <a className="dropdown-item" href="/schools">Up and coming schools!</a>
                         </div>
                     </li>
                 </ul>
