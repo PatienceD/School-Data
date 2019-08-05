@@ -16,15 +16,13 @@ function Navbar() {
                         <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false" style={{ fontSize: "20px" }}>Schools
                         </a>
-
                         <div className="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
                             <a className="dropdown-item" href="/">University of Wisconsin-Madison</a>
                             <a className="dropdown-item" href="/schools">Up and coming schools!</a>
                         </div>
                     </li>
                 </ul>
-                <img src={Logo}
-                    alt="avatar image" height="115"></img>
+                <img src={Logo} alt="logo" height="115"></img>
             </div>
         </nav>
     )

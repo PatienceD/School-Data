@@ -8,6 +8,7 @@ import Body from "./components/Body";
 import Footer from "./components/Footer";
 import Schools from "./components/Schools";
 import NoSchools from "./components/NoSchools";
+import "./App.css";
 
 function App() {
   return (
