@@ -3,6 +3,8 @@ import { Doughnut } from 'react-chartjs-2';
 import { HorizontalBar } from 'react-chartjs-2';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
+
+var apiData;
 var axios = require("axios");
 let apiURL =
     "https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&2015.academics.program_available.assoc_or_bachelors=true&2015.student.size__range=1..&school.degrees_awarded.predominant__range=1..3&school.degrees_awarded.highest__range=2..4&id=240444&api_key=mkIYGU6R65A5fNgNLr2uaaywY4pEEuhDGkyt0oDG";
@@ -17,13 +19,24 @@ class School extends Component {
         }
     }
 
+    downloadTxtFile = () => {
+        console.log(apiData);
+        console.log("clicked :)");
+        const element = document.createElement("a");
+        const file = new Blob([JSON.stringify(apiData, null, 2)], { type: 'text/plain' });
+        element.href = URL.createObjectURL(file);
+        element.download = "myFile.txt";
+        document.body.appendChild(element); // Required for this to work in FireFox
+        element.click();
+    }
+
     printDocument() {
-        const input = document.getElementById("divToPrint");
-        html2canvas(input)
+        // const input = document.getElementById("divToPrint");
+        html2canvas(document.body)
             .then((canvas) => {
-                const imgData = canvas.toDataURL('img/png', 1.0);
-                const pdf = new jsPDF('p', 'mm', 'a4');
-                pdf.addImage(imgData, 'JPEG', 10, 10, 230, 250);
+                const imgData = canvas.toDataURL('img/png');
+                const pdf = new jsPDF({ orientation: 'l', format: 'a0'});
+                pdf.addImage(imgData, 'JPEG', 110, 0, 970, 840);
                 pdf.save("download.pdf");
             });
     }
@@ -36,7 +49,8 @@ class School extends Component {
     SchoolName() {
         axios
             .get(apiURL)
-            .then(response => {
+            .then(response => { 
+                apiData = response;
                 this.setState({
                     Name: response.data.results[0].school.name,
                     Address: response.data.results[0].school.city + " " + response.data.results[0].school.state + " " + response.data.results[0].school.zip,
@@ -155,7 +169,7 @@ class School extends Component {
                                 <hr className="my-4"></hr>
                                 <p>"The primary purpose of the University of Wisconsin–Madison is to provide a learning environment in which faculty,
                                     staff and students can discover, examine critically, preserve and transmit the knowledge, wisdom and values that
-                        will help ensure the survival of this and future generations and improve the quality of life for all."</p>
+                                    will help ensure the survival of this and future generations and improve the quality of life for all."</p>
                                 <a className="btn btn-lg" href={this.state.URL} role="button" rel="noopener noreferrer" style={{ backgroundColor: "#DAA520" }} target="_blank">Check out their website</a>
                             </div>
                         </div>
@@ -196,7 +210,7 @@ class School extends Component {
                                         </div>
                                         <div className="row">
                                             <div className="col-md-12">
-                                                <button type="button" className="btn" style={{ backgroundColor: "#DAA520" }}>Download</button>
+                                                <button onClick={this.downloadTxtFile} type="button" className="btn" style={{ backgroundColor: "#DAA520" }}>Download</button>
                                             </div>
                                         </div>
                                         <div className="row">
