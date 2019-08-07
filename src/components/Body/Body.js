@@ -17,15 +17,15 @@ class School extends Component {
         }
     }
 
-    printDocument(){
+    printDocument() {
         const input = document.getElementById("divToPrint");
         html2canvas(input)
-        .then((canvas) => {
-            const imgData = canvas.toDataURL('img/png');
-            const pdf = new jsPDF();
-            pdf.addImage(imgData, 'JPEG', 0, 0);
-            pdf.save("download.pdf");
-        });
+            .then((canvas) => {
+                const imgData = canvas.toDataURL('img/png', 1.0);
+                const pdf = new jsPDF('p', 'mm', 'a4');
+                pdf.addImage(imgData, 'JPEG', 10, 10, 230, 250);
+                pdf.save("download.pdf");
+            });
     }
 
     componentDidMount() {
@@ -144,69 +144,71 @@ class School extends Component {
             return <div>Error: {error.message}</div>
         } else {
             return (
-                <div className="container" id="divToPrint">
-                    <div className="row">
-                        <div className="jumbotron" style={{ marginTop: "25px" }}>
-                            <h2 className="display-4">{this.state.Name}</h2>
-                            <p className="lead">Location: {this.state.Address}</p>
-                            <p>Alias: No Current Alias</p>
-                            <p>Student Count: 43,820</p>
-                            <hr className="my-4"></hr>
-                            <p>"The primary purpose of the University of Wisconsin–Madison is to provide a learning environment in which faculty,
-                                staff and students can discover, examine critically, preserve and transmit the knowledge, wisdom and values that
+                <div className="wrapper" id="divToPrint">
+                    <div className="container">
+                        <div className="row">
+                            <div className="jumbotron" style={{ marginTop: "25px" }}>
+                                <h2 className="display-4">{this.state.Name}</h2>
+                                <p className="lead">Location: {this.state.Address}</p>
+                                <p>Alias: No Current Alias</p>
+                                <p>Student Count: 43,820</p>
+                                <hr className="my-4"></hr>
+                                <p>"The primary purpose of the University of Wisconsin–Madison is to provide a learning environment in which faculty,
+                                    staff and students can discover, examine critically, preserve and transmit the knowledge, wisdom and values that
                         will help ensure the survival of this and future generations and improve the quality of life for all."</p>
-                            <a className="btn btn-lg" href={this.state.URL} role="button" rel="noopener noreferrer" style={{ backgroundColor: "#DAA520" }} target="_blank">Check out their website</a>
+                                <a className="btn btn-lg" href={this.state.URL} role="button" rel="noopener noreferrer" style={{ backgroundColor: "#DAA520" }} target="_blank">Check out their website</a>
+                            </div>
                         </div>
+                        <div className="row">
+                            <div className="col-md-6">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h4 style={{ textAlign: "center" }}>Academics at UOW</h4>
+                                        <Doughnut data={ProgramData} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h4 style={{ textAlign: "center" }}>SAT Scores for UOW</h4>
+                                        <HorizontalBar data={HorData} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br></br>
+                        <div className="row">
+                            <div className="col-md-6">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <h4 style={{ textAlign: "center" }}>Ethicity at UOW</h4>
+                                        <Doughnut data={EthicityData} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <div className="row">
+                                            <div className="col-md-12">
+                                                <button onClick={this.printDocument} type="button" className="btn" style={{ backgroundColor: "#DAA520" }}>Save Page as a PDF</button>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-md-12">
+                                                <button type="button" className="btn" style={{ backgroundColor: "#DAA520" }}>Download</button>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-md-12">
+                                                <button onClick={() => window.print()} type="button" className="btn" style={{ backgroundColor: "#DAA520" }}>Print</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br></br>
                     </div>
-                    <div className="row">
-                        <div className="col-md-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h4 style={{ textAlign: "center" }}>Academics at UOW</h4>
-                                    <Doughnut data={ProgramData} />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h4 style={{ textAlign: "center" }}>SAT Scores for UOW</h4>
-                                    <HorizontalBar data={HorData} />
-                                </div>
-                            </div>
-                        </div>
-                    </div><br></br>
-                    <div className="row">
-                        <div className="col-md-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h4 style={{ textAlign: "center" }}>Ethicity at UOW</h4>
-                                    <Doughnut data={EthicityData} />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="card">
-                                <div className="card-body">
-                                    <div className="row">
-                                        <div className="col-md-12">
-                                            <button onClick={this.printDocument} type="button" className="btn" style={{ backgroundColor: "#DAA520" }}>Save Page as a PDF</button>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col-md-12">
-                                            <button type="button" className="btn" style={{ backgroundColor: "#DAA520" }}>Download</button>
-                                        </div>
-                                    </div>
-                                    <div className="row">
-                                        <div className="col-md-12">
-                                            <button onClick={() => window.print()} type="button" className="btn" style={{ backgroundColor: "#DAA520" }}>Print</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div><br></br>
                 </div>
             )
         }
