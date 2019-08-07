@@ -5,6 +5,7 @@ var axios = require("axios");
 let apiURL =
     "https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&2015.academics.program_available.assoc_or_bachelors=true&2015.student.size__range=1..&school.degrees_awarded.predominant__range=1..3&school.degrees_awarded.highest__range=2..4&id=240444&api_key=mkIYGU6R65A5fNgNLr2uaaywY4pEEuhDGkyt0oDG";
 
+
 class School extends Component {
     constructor(props) {
         super(props);
@@ -186,7 +187,7 @@ class School extends Component {
                                     </div>
                                     <div className="row">
                                         <div className="col-md-12">
-                                            <button type="button" className="btn" style={{ backgroundColor: "#DAA520" }}>Print</button>
+                                            <button onClick={() => window.print()} type="button" className="btn" style={{ backgroundColor: "#DAA520" }}>Print</button>
                                         </div>
                                     </div>
                                 </div>
@@ -198,5 +199,7 @@ class School extends Component {
         }
     }
 }
+
+
 
 export default School;
