@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Doughnut } from 'react-chartjs-2';
 import { HorizontalBar } from 'react-chartjs-2';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 var axios = require("axios");
 let apiURL =
     "https://api.data.gov/ed/collegescorecard/v1/schools/?school.operating=1&2015.academics.program_available.assoc_or_bachelors=true&2015.student.size__range=1..&school.degrees_awarded.predominant__range=1..3&school.degrees_awarded.highest__range=2..4&id=240444&api_key=mkIYGU6R65A5fNgNLr2uaaywY4pEEuhDGkyt0oDG";
@@ -13,6 +15,17 @@ class School extends Component {
         this.state = {
             Charts: []
         }
+    }
+
+    printDocument(){
+        const input = document.getElementById("divToPrint");
+        html2canvas(input)
+        .then((canvas) => {
+            const imgData = canvas.toDataURL('img/png');
+            const pdf = new jsPDF();
+            pdf.addImage(imgData, 'JPEG', 0, 0);
+            pdf.save("download.pdf");
+        });
     }
 
     componentDidMount() {
@@ -131,7 +144,7 @@ class School extends Component {
             return <div>Error: {error.message}</div>
         } else {
             return (
-                <div className="container">
+                <div className="container" id="divToPrint">
                     <div className="row">
                         <div className="jumbotron" style={{ marginTop: "25px" }}>
                             <h2 className="display-4">{this.state.Name}</h2>
@@ -177,7 +190,7 @@ class School extends Component {
                                 <div className="card-body">
                                     <div className="row">
                                         <div className="col-md-12">
-                                            <button type="button" className="btn" style={{ backgroundColor: "#DAA520" }}>Save Page as a PDF</button>
+                                            <button onClick={this.printDocument} type="button" className="btn" style={{ backgroundColor: "#DAA520" }}>Save Page as a PDF</button>
                                         </div>
                                     </div>
                                     <div className="row">
