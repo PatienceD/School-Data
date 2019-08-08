@@ -8,6 +8,7 @@
     "bootstrap": "^4.0.0-alpha.6",
     "canvasjs": "^1.8.1",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^2.1.0",
     "html2canvas": "^1.0.0-rc.3",
     "jspdf": "^1.5.3",
     "mdbootstrap": "^4.8.7",
@@ -23,6 +24,8 @@
     "router": "^1.3.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
