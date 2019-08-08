@@ -2,19 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This single page application uses an axios call to Data.gov's api, and displays University of Wisconsin's information. 
 
+
 ### `First start by cloning the repo to your local machine`
 
-This ensures you get the most out of my application!
 
-### `npm i`
+To build the application and install dependencies, run the following command in your VSCode Terminal:
+```
+> npm i
+```
 
-Before running this application, you will need to install the dependencies. Open up your terminal for this repo, and type "npm i". This will install every dependencies you'll need. Don't worry if it takes some time.
+After all the dependencies are installed, you can run this beautiful application locally! In the same terminal as before, just type "npm start" and wait for the magic:
+```
+> npm start
+```
 
-### `npm start`
-
-After all the dependencies are install, you can run this beautiful application locally! In the same terminal as before, just type "npm start" and wait for the magic.
-
-### `Technologies Used`
+## Technologies Used:
 
 - HTML5
 - CSS3

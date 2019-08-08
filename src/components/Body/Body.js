@@ -170,7 +170,7 @@ class School extends Component {
                                 <p>"The primary purpose of the University of Wisconsin–Madison is to provide a learning environment in which faculty,
                                     staff and students can discover, examine critically, preserve and transmit the knowledge, wisdom and values that
                                     will help ensure the survival of this and future generations and improve the quality of life for all."</p>
-                                <a className="btn btn-lg" href={this.state.URL} role="button" rel="noopener noreferrer" style={{ backgroundColor: "#DAA520" }} target="_blank">Check out their website</a>
+                                <a className="btn btn-lg" href={"http://" + this.state.URL} rel="noopener noreferrer" style={{ backgroundColor: "#DAA520" }} target="_blank">Check out their website</a>
                             </div>
                         </div>
                         <div className="row">
