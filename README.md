@@ -1,35 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## School Data
 
-## Available Scripts
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This single page application uses an axios call to Data.gov's api, and displays University of Wisconsin's information. 
 
-In the project directory, you can run:
+### `First start by cloning the repo to your local machine`
+
+This ensures you get the most out of my application!
+
+### `npm i`
+
+Before running this application, you will need to install the dependencies. Open up your terminal for this repo, and type "npm i". This will install every dependencies you'll need. Don't worry if it takes some time.
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+After all the dependencies are install, you can run this beautiful application locally! In the same terminal as before, just type "npm start" and wait for the magic.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### `Technologies Used`
 
-### `npm test`
+- HTML5
+- CSS3
+- Bootstrap
+- React
+- Node.js
+- MDB (module)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<!-- **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
@@ -65,4 +59,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify -->
