@@ -6,19 +6,17 @@ import midtopic from "./img/mid-topic.png";
 import righttopic from "./img/right-topic.png";
 
 
-// import { homedir } from "os";
-
 function Home() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a className="navbar-brand" href="#">School Data</a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto">
+                    <ul className="navbar-nav mr-auto ">
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Schools
@@ -28,9 +26,6 @@ function Home() {
                                 <a className="dropdown-item" href="/schools">Another School</a>
                                 <a className="dropdown-item" href="/schools">Some other school</a>
                             </div>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">School API</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">About the Developer</a>
@@ -109,7 +104,7 @@ function Home() {
                                 <div className="col-lg-12">
                                     <p>Data.gov doesn’t just catalog raw data, it also includes APIs from across government. You can browse the current catalog for APIs,
                                         but expect this listing to grow as agencies include more of their APIs as part of their data.json metadata in Project Open Data.</p>
-                                    <p>Learn More about data.gov</p> 
+                                    <p>Learn More about data.gov</p>
                                     <a href="https://www.data.gov/" target="_blank"><button className="btn btn-outline-success my-2 my-sm-0" type="button">More Info</button></a>
 
                                 </div>
@@ -118,14 +113,44 @@ function Home() {
                         </div>
                     </div>
                 </div>
+                <br></br><br></br>
             </div>
             <footer>
                 <div className="row">
-                    <div className="col-md-6">
-                        <h1>Footer test</h1>
+                    <div className="col-md-4">
+                        <h1>Data.gov</h1>
+                        <hr></hr>
+                        <h3>Learn more about data.gov.</h3>
+                        <ul>
+                            <a href="https://www.data.gov/" target="_blank"><li>Data.gov</li></a>
+                            <a href="https://www.data.gov/impact/" target="_blank"><li>Impact</li></a>
+                            <a href="https://www.data.gov/applications" target="_blank"><li>Applications</li></a>
+                            <a href="https://www.data.gov/developers/" target="_blank"><li>Developers</li></a>
+                            <a href="https://www.data.gov/contact" target="_blank"><li>Contact</li></a>
+                        </ul>
                     </div>
-                    <div className="col-md-6">
-                        <h1>Footer test 2</h1>
+                    <div className="col-md-4">
+                        <h1>Quick Access to Schools</h1>
+                        <hr></hr>
+                        <h3>Learn more about each school.</h3>
+                        <ul>
+                            <a href="/wisconsin" target="_blank"><li>University of Wisconsin-Madison</li></a>
+                            <a href="#" target="_blank"><li>To be determined</li></a>
+                            <a href="#" target="_blank"><li>To be determined</li></a>
+                            <a href="#" target="_blank"><li>To be determined</li></a>
+                            <a href="#" target="_blank"><li>To be determined</li></a>
+                        </ul>
+                    </div>
+                    <div className="col-md-4">
+                        <h1>Contact</h1>
+                        <hr></hr>
+                        <h4>patience.deaton2@outlook.com</h4>
+                        <div className="row">
+                            <a href="#" target="_blank"><li><i class="fab fa-github-square"></i></li></a>
+                            <a href="#" target="_blank"><li><i class="fab fa-linkedin"></i></li></a>
+                            <a href="#" target="_blank"><li><i class="fab fa-facebook-square"></i></li></a>
+                            <a href="#" target="_blank"><li><i class="fab fa-twitter-square"></i></li></a>
+                        </div>
                     </div>
                 </div>
             </footer>
