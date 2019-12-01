@@ -3,6 +3,7 @@ import { Doughnut } from 'react-chartjs-2';
 import { HorizontalBar } from 'react-chartjs-2';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
+import Logo from "./logo/mwlogo.png"
 
 var apiData;
 var axios = require("axios");
@@ -35,7 +36,7 @@ class School extends Component {
         html2canvas(document.body)
             .then((canvas) => {
                 const imgData = canvas.toDataURL('img/png');
-                const pdf = new jsPDF({ orientation: 'l', format: 'a0'});
+                const pdf = new jsPDF({ orientation: 'l', format: 'a0' });
                 pdf.addImage(imgData, 'JPEG', 110, 0, 970, 840);
                 pdf.save("download.pdf");
             });
@@ -49,7 +50,7 @@ class School extends Component {
     SchoolName() {
         axios
             .get(apiURL)
-            .then(response => { 
+            .then(response => {
                 apiData = response;
                 this.setState({
                     Name: response.data.results[0].school.name,
@@ -158,7 +159,28 @@ class School extends Component {
             return <div>Error: {error.message}</div>
         } else {
             return (
+
                 <div className="wrapper" id="divToPrint">
+                    <nav className="mb-1 navbar navbar-expand-lg danger-color-dark lighten-1" style={{ color: "#fafafa", height: "95px" }}>
+                        <h5 className="navbar-brand"> <img src={Logo} alt="logo" height="115"></img>Wisconsin-Madison</h5>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+                            aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent-555">
+                            <ul className="navbar-nav mr-auto">
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false" style={{ fontSize: "20px" }}>Schools
+                        </a>
+                                    <div className="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
+                                        <a className="dropdown-item" href="/">University of Wisconsin-Madison</a>
+                                        <a className="dropdown-item" href="/schools">Up and coming schools!</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                     <div className="container">
                         <div className="row">
                             <div className="jumbotron" style={{ marginTop: "25px" }}>
@@ -223,6 +245,27 @@ class School extends Component {
                             </div>
                         </div><br></br>
                     </div>
+                    <footer className="page-footer font-small teal pt-4 danger-color-dark">
+                        <div className="container-fluid text-center text-md-left">
+                            <div className="row">
+                                <div className="col-md-6 mt-md-0 mt-3">
+                                    <h5 className="text-uppercase font-weight-bold">Education Analytics</h5>
+                                    <hr></hr>
+                                    <p>131 West Wilson Street Suite 200 Madison, WI 53703</p>
+                                    <p>(608) 466-4966</p>
+                                </div>
+                                <hr className="clearfix w-100 d-md-none pb-3"></hr>
+                                <div className="col-md-6 mb-md-0 mb-3">
+                                    <h5 className="text-uppercase font-weight-bold">Created by: Patience Deaton</h5>
+                                    <hr></hr>
+                                    <p>Orlando, FL</p>
+                                    <p>patience.deaton2@outlook.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="footer-copyright text-center py-3">© 2018 Copyright
+                </div>
+                    </footer>
                 </div>
             )
         }
