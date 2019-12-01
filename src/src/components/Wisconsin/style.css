@@ -1,0 +1,16 @@
+.footer {
+    padding: 10px;
+    display: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkred;
+}
+
+.wrapper {
+    min-height: calc(100vh - 233px);
+}
+
+body{
+    background-image: url(https://www.muralswallpaper.com/app/uploads/white-gold-marble-textures-plain-820x532.jpg);
+}
