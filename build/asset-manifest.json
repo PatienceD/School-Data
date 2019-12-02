@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/School-Data/static/css/main.82dc17c1.chunk.css",
+    "main.js": "/School-Data/static/js/main.fac372ec.chunk.js",
+    "main.js.map": "/School-Data/static/js/main.fac372ec.chunk.js.map",
+    "runtime~main.js": "/School-Data/static/js/runtime~main.b313a236.js",
+    "runtime~main.js.map": "/School-Data/static/js/runtime~main.b313a236.js.map",
+    "static/css/2.7d80196c.chunk.css": "/School-Data/static/css/2.7d80196c.chunk.css",
+    "static/js/2.d7fff1d6.chunk.js": "/School-Data/static/js/2.d7fff1d6.chunk.js",
+    "static/js/2.d7fff1d6.chunk.js.map": "/School-Data/static/js/2.d7fff1d6.chunk.js.map",
+    "index.html": "/School-Data/index.html",
+    "precache-manifest.82291b55ca78ebbe826bffffa91a259b.js": "/School-Data/precache-manifest.82291b55ca78ebbe826bffffa91a259b.js",
+    "service-worker.js": "/School-Data/service-worker.js",
+    "static/css/2.7d80196c.chunk.css.map": "/School-Data/static/css/2.7d80196c.chunk.css.map",
+    "static/css/main.82dc17c1.chunk.css.map": "/School-Data/static/css/main.82dc17c1.chunk.css.map",
+    "static/media/mdb.css": "/School-Data/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/data.PNG": "/School-Data/static/media/data.84d60998.PNG",
+    "static/media/all.min.css": "/School-Data/static/media/fa-solid-900.c2801fb4.svg",
+    "static/media/left-topic.png": "/School-Data/static/media/left-topic.74778518.png",
+    "static/media/style.css": "/School-Data/static/media/marble.8b804210.jpg",
+    "static/media/mid-topic.png": "/School-Data/static/media/mid-topic.ace7509f.png",
+    "static/media/mwlogo.png": "/School-Data/static/media/mwlogo.30914432.png"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Institutional-Metadata/static/css/main.b100e6da.chunk.css",
+    "main.js": "/Institutional-Metadata/static/js/main.5078f2e2.chunk.js",
+    "main.js.map": "/Institutional-Metadata/static/js/main.5078f2e2.chunk.js.map",
+    "runtime-main.js": "/Institutional-Metadata/static/js/runtime-main.8b33ea27.js",
+    "runtime-main.js.map": "/Institutional-Metadata/static/js/runtime-main.8b33ea27.js.map",
+    "static/js/2.4e6e63a9.chunk.js": "/Institutional-Metadata/static/js/2.4e6e63a9.chunk.js",
+    "static/js/2.4e6e63a9.chunk.js.map": "/Institutional-Metadata/static/js/2.4e6e63a9.chunk.js.map",
+    "index.html": "/Institutional-Metadata/index.html",
+    "precache-manifest.d023acba7fc7628488b893505ab55c54.js": "/Institutional-Metadata/precache-manifest.d023acba7fc7628488b893505ab55c54.js",
+    "service-worker.js": "/Institutional-Metadata/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/Institutional-Metadata/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/Institutional-Metadata/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b33ea27.js",
+    "static/js/2.4e6e63a9.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.5078f2e2.chunk.js"
+  ]
+}
