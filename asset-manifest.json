@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/Institutional-Metadata/static/css/main.b100e6da.chunk.css",
-    "main.js": "/Institutional-Metadata/static/js/main.5078f2e2.chunk.js",
-    "main.js.map": "/Institutional-Metadata/static/js/main.5078f2e2.chunk.js.map",
-    "runtime-main.js": "/Institutional-Metadata/static/js/runtime-main.8b33ea27.js",
-    "runtime-main.js.map": "/Institutional-Metadata/static/js/runtime-main.8b33ea27.js.map",
-    "static/js/2.4e6e63a9.chunk.js": "/Institutional-Metadata/static/js/2.4e6e63a9.chunk.js",
-    "static/js/2.4e6e63a9.chunk.js.map": "/Institutional-Metadata/static/js/2.4e6e63a9.chunk.js.map",
-    "index.html": "/Institutional-Metadata/index.html",
-    "precache-manifest.d023acba7fc7628488b893505ab55c54.js": "/Institutional-Metadata/precache-manifest.d023acba7fc7628488b893505ab55c54.js",
-    "service-worker.js": "/Institutional-Metadata/service-worker.js",
-    "static/css/main.b100e6da.chunk.css.map": "/Institutional-Metadata/static/css/main.b100e6da.chunk.css.map",
-    "static/media/logo.svg": "/Institutional-Metadata/static/media/logo.25bf045c.svg"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.8b33ea27.js",
-    "static/js/2.4e6e63a9.chunk.js",
-    "static/css/main.b100e6da.chunk.css",
-    "static/js/main.5078f2e2.chunk.js"
-  ]
+    "main.css": "/School-Data/static/css/main.82dc17c1.chunk.css",
+    "main.js": "/School-Data/static/js/main.6bca494c.chunk.js",
+    "main.js.map": "/School-Data/static/js/main.6bca494c.chunk.js.map",
+    "runtime~main.js": "/School-Data/static/js/runtime~main.b313a236.js",
+    "runtime~main.js.map": "/School-Data/static/js/runtime~main.b313a236.js.map",
+    "static/css/2.7d80196c.chunk.css": "/School-Data/static/css/2.7d80196c.chunk.css",
+    "static/js/2.d7fff1d6.chunk.js": "/School-Data/static/js/2.d7fff1d6.chunk.js",
+    "static/js/2.d7fff1d6.chunk.js.map": "/School-Data/static/js/2.d7fff1d6.chunk.js.map",
+    "index.html": "/School-Data/index.html",
+    "precache-manifest.796fbd51ee374f8bd31be2cb24139e63.js": "/School-Data/precache-manifest.796fbd51ee374f8bd31be2cb24139e63.js",
+    "service-worker.js": "/School-Data/service-worker.js",
+    "static/css/2.7d80196c.chunk.css.map": "/School-Data/static/css/2.7d80196c.chunk.css.map",
+    "static/css/main.82dc17c1.chunk.css.map": "/School-Data/static/css/main.82dc17c1.chunk.css.map",
+    "static/media/mdb.css": "/School-Data/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/data.PNG": "/School-Data/static/media/data.84d60998.PNG",
+    "static/media/all.min.css": "/School-Data/static/media/fa-solid-900.c2801fb4.svg",
+    "static/media/left-topic.png": "/School-Data/static/media/left-topic.74778518.png",
+    "static/media/style.css": "/School-Data/static/media/marble.8b804210.jpg",
+    "static/media/mid-topic.png": "/School-Data/static/media/mid-topic.ace7509f.png",
+    "static/media/mwlogo.png": "/School-Data/static/media/mwlogo.30914432.png"
+  }
 }
