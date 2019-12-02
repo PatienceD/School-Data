@@ -2,7 +2,7 @@
   "name": "myapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://PatienceD.github.io/School-Data",
+  "homepage": "https://PatienceD.github.io/School-Data",
   "dependencies": {
     "axios": "^0.19.0",
     "bootstrap": "^4.0.0-alpha.6",
