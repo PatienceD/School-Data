@@ -146,10 +146,10 @@ function Home() {
                         <hr></hr>
                         <h4>patience.deaton2@outlook.com</h4>
                         <div className="row">
-                            <a href="#" target="_blank"><li><i class="fab fa-github-square"></i></li></a>
-                            <a href="#" target="_blank"><li><i class="fab fa-linkedin"></i></li></a>
-                            <a href="#" target="_blank"><li><i class="fab fa-facebook-square"></i></li></a>
-                            <a href="#" target="_blank"><li><i class="fab fa-twitter-square"></i></li></a>
+                            <a href="#" target="_blank"><li><i className="fab fa-github-square"></i></li></a>
+                            <a href="#" target="_blank"><li><i className="fab fa-linkedin"></i></li></a>
+                            <a href="#" target="_blank"><li><i className="fab fa-facebook-square"></i></li></a>
+                            <a href="#" target="_blank"><li><i className="fab fa-twitter-square"></i></li></a>
                         </div>
                     </div>
                 </div>

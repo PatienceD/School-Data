@@ -7,7 +7,7 @@ import Home from "./components/Home";
 import Wisconsin from "./components/Wisconsin";
 // import Footer from "./components/Footer";
 import Schools from "./components/Schools";
-// import NoSchools from "./components/NoSchools";
+import NoSchools from "./components/NoSchools";
 import "./App.css";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/wisconsin" component={Wisconsin} />
             <Route exact path="/schools" component={Schools} />
-            {/* <Route component={NoSchools} /> */}
+            <Route component={NoSchools} />
           </Switch>
         </Router>
       </div>
