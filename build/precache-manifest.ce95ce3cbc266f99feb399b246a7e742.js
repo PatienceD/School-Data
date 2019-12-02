@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "af85cc0d8abc0fd625e4fb8c4717b6b6",
+    "revision": "3905732794159b96d4ac344d24a1ce67",
     "url": "/School-Data/index.html"
   },
   {
-    "revision": "698e68c650f71579b68d",
-    "url": "/School-Data/static/css/2.7d80196c.chunk.css"
+    "revision": "ee65167c86e37d6cf991",
+    "url": "/School-Data/static/css/2.f9c2a6d3.chunk.css"
   },
   {
-    "revision": "2983cc34f6eb81ad7a57",
+    "revision": "c000d9f19b4e6201ee93",
     "url": "/School-Data/static/css/main.82dc17c1.chunk.css"
   },
   {
-    "revision": "698e68c650f71579b68d",
-    "url": "/School-Data/static/js/2.d7fff1d6.chunk.js"
+    "revision": "ee65167c86e37d6cf991",
+    "url": "/School-Data/static/js/2.4480a537.chunk.js"
   },
   {
-    "revision": "2983cc34f6eb81ad7a57",
-    "url": "/School-Data/static/js/main.fac372ec.chunk.js"
+    "revision": "c000d9f19b4e6201ee93",
+    "url": "/School-Data/static/js/main.6ff5a7cc.chunk.js"
   },
   {
-    "revision": "e83f259408a0b51fbc03",
-    "url": "/School-Data/static/js/runtime~main.b313a236.js"
+    "revision": "76d7a9f6c7d93bf77532",
+    "url": "/School-Data/static/js/runtime-main.5c2e0f0a.js"
   },
   {
     "revision": "39b2c3031be6b4ea96e2e3e95d307814",
